@@ -1,4 +1,4 @@
-header{font-family: arial;}
+/* header{font-family: arial;} */
 
 body{
   font-family: 'Lato', sans-serif;
@@ -9,30 +9,45 @@ img{
   height: 100%}
 
 nav{
-  display: grid;
-    grid-template-columns: 33% 33% 33%;
-    background-color: #cccccc;
-  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  background-color: #cccccc;
+  font-family: 'Lato', sans-serif;
+  align-items: center;
 }
 
 nav ul{
-  grid-column-start: 2;
-  grid-column-end: 3;
-    /*padding: 10px;*/
+  padding: 10px;
+  /*padding: 10px;*/
     color:#000066;
-    text-decoration-line: none;
 }
 
-nav ul li{
-  text-decoration-line: none;
-
+nav ul li a{
+  text-decoration: none;
+  color: #000000;
 }
 
 h1{font-family:'Roboto', sans-serif;
   font-weight: 900;
   font-size: 2em;
+  color: #ffffff;
   text-transform: uppercase;
-  margin: 2%
+  margin: 2%;
+
+}
+
+background-img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.design_background{
+  display: flex;
+flex-direction: row;
+align-items: center;
+background-image: url(../images/uxheader.jpg);
+background-size: cover;
+min-height: 20vh;
+background-repeat: no-repeat; 
 }
 
 a.skip{
@@ -61,19 +76,20 @@ ul{
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
-  background-color: #e7e7e7;
+  /* background-color: #e7e7e7;
   color: black;
   border: 2px solid #000000;
   width: auto;
   height: auto;
   margin: 10px;
   text-decoration: none;
-  padding: 1%;
+  padding: 1%; */
   }
 
 nav ul li .home{
   font-family: 'Lato';
   font-weight: bold;
+  text-decoration-line: none;
 }
 
 footer{
@@ -91,16 +107,7 @@ main{
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-.far-fa-copyright footer{
-  grid-column: 1/2;
-  width:auto;
-}
-.fa-linkedin footer{
-  grid-column: 2/2;
-}
-.fa-envelope footer{
-  grid-column: 2/2;
-}
+
 
 
 .headimg img{
@@ -111,9 +118,9 @@ main{
 
 }
 
-.background-img{
+/* .background-img{
   background-image: url("../images/background_img.jpg");
-}
+} */
 /* --------- ABOUT PAGE ---------*/
 
 
@@ -182,6 +189,7 @@ p{
   margin: auto;
   padding: 2%;
   font-family: 'Lato', sans-serif;
+  text-decoration: none;
 }
 .gallery{
   display: flex;
