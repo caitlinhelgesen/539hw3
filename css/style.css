@@ -2,6 +2,7 @@
 
 body{
   font-family: 'Lato', sans-serif;
+  margin-top: -1em;
 }
 
 img{
@@ -18,9 +19,16 @@ nav{
 
 nav ul{
   padding: 10px;
-  /*padding: 10px;*/
-    color:#000066;
+  color: #000066;
+  text-align: center;
+  background-color: #e7e7e7;
+  color: black;
+  border: 2px solid #000000;
 }
+
+/* nav ul li{
+  align-items: center;
+} */
 
 nav ul li a{
   text-decoration: none;
@@ -32,22 +40,13 @@ h1{font-family:'Roboto', sans-serif;
   font-size: 2em;
   color: #ffffff;
   text-transform: uppercase;
-  margin: 2%;
-
+  /* margin: 2%; */
+  padding: .1em;
 }
 
 background-img{
   max-width: 100%;
   max-height: 100%;
-}
-.design_background{
-  display: flex;
-flex-direction: row;
-align-items: center;
-background-image: url(../images/uxheader.jpg);
-background-size: cover;
-min-height: 20vh;
-background-repeat: no-repeat; 
 }
 
 a.skip{
@@ -75,7 +74,8 @@ ul{
 .current{
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: bold;
+  font-family: 'roboto';
+  font-weight: 900;
   /* background-color: #e7e7e7;
   color: black;
   border: 2px solid #000000;
@@ -110,17 +110,6 @@ main{
 
 
 
-.headimg img{
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height:auto;
-
-}
-
-/* .background-img{
-  background-image: url("../images/background_img.jpg");
-} */
 /* --------- ABOUT PAGE ---------*/
 
 
@@ -131,6 +120,9 @@ main{
   margin-bottom: 5%
 }
 
+.about_head{
+  color: #000000;
+}
 .about img{
   max-width: 75%;
   max-height: 75%;
@@ -155,7 +147,7 @@ main{
 
 p{
   align-self: flex-start;
-  margin: 2%;
+  margin: .5em;
 
 }
 
@@ -165,23 +157,44 @@ p{
   flex-direction: column;
   align-content: center;
 }
-/* .skills*/ h2{
+
+.design_background{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+background-image: url('../images/uxheader_op.jpg');
+background-size: cover;
+min-height: 20vh;
+background-repeat: no-repeat;
+}
+ h2{
   align-self: center;
   margin: 2%;
   text-transform: uppercase;
   font-family: 'Roboto';
 
-
 }
-
+.design_list ul{
+  display: flex;
+  flex-direction: column;
+    /* justify-content: space-between; */
+  margin: .5em;
+}
+.design_list ul li{
+  display: flex;
+  flex-direction: column;
+    /* justify-content: space-between; */
+  margin: .5em;
+}
 .skills ul{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin: 2% 5% 40% 2%;
+  margin-bottom: 4em;
 /* width: 50%; */
-  height: fit-content
+  /* height: fit-content */
 }
 
 .skills ul li{
@@ -212,20 +225,64 @@ p{
   flex-direction: column;
   flex-wrap: wrap;
 }
-.reaseach h1{
-  align-self: flex-start;
-  object-fit: contain;
-  order: 0
+.research h1{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+background-image: url('../images/UXResearchheader_op.jpg');
+background-size: cover;
+min-height: 20vh;
+background-repeat: no-repeat;
 }
+
 .research img{
   object-fit: contain;
 }
 
+.research h3{
+display: flex;
+justify-content: center;
+margin: .5em;
+text-transform: uppercase;
+font-family: 'Roboto';
 }
+
+
+/*
+.research_background{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+background-image: url('../images/UXResearchheader_op.jpg');
+background-size: cover;
+min-height: 20vh;
+background-repeat: no-repeat;
+} */
 /*  --------- HOMEPAGE ---------*/
+.homepage {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+background-image: url('../images/homepage_op.jpg');
+background-size: cover;
+min-height: 20vh;
+background-repeat: no-repeat;
+}
+
 
 /*  --------- MARKETING PAGE ---------*/
-
+.marketing {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+background-image: url('../images/Fpace_op.jpg');
+background-size: cover;
+min-height: 20vh;
+background-repeat: no-repeat;
 
 @media screen and (min-width:500px) {
 	.about_img img{
