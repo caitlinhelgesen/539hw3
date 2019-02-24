@@ -272,6 +272,13 @@ min-height: 20vh;
 background-repeat: no-repeat;
 }
 
+.homelinks a{
+  display: flex;
+flex-direction: row;
+/* justify-content: center; */
+/* margin: .5em; */
+padding: .5em;
+}
 
 /*  --------- MARKETING PAGE ---------*/
 .marketing {
